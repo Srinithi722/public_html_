@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en">
+ 
+  <head>
+
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  	<title>Home | BM Academy</title>
+  	<link rel="shortcut icon" href="assets/images/BM Logo Final-01.png">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    
+
+  	<!-- Framework - CSS Include -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <!-- Icon Font - CSS Include -->
+    <link rel="stylesheet" type="text/css" href="assets/css/fontawesome.css">
+
+    <!-- Animation - CSS Include -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+
+    <!-- Cursor - CSS Include -->
+    <link rel="stylesheet" type="text/css" href="assets/css/cursor.css">
+
+    <!-- Carousel - CSS Include -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+
+    <!-- Video & Image Popup - CSS Include -->
+    <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
+
+    <!-- Vanilla Calendar - CSS Include -->
+    <link rel="stylesheet" type="text/css" href="assets/css/vanilla-calendar.min.css">
+
+    <!-- Custom - CSS Include -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <style>
+      /* Style for the fixed vertical button */
+      .vertical-button {
+        position: fixed;
+        right: -37px;
+        top: 61%;
+        transform: translateY(-50%);
+        background-color: #333; /* Background color */
+        color: #fff; /* Text color */
+        padding: 10px 15px;
+        border-radius: 5px 0 0 5px;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        transition: background-color 0.3s;
+        display: flex;
+        align-items: center;
+      }
+    
+      
+    
+      .vertical-button img {
+        width: 20px;
+        height: 20px;
+        margin-top: 10px; /* Adjust spacing as needed */
+      }
+      @media (max-width: 768px) {
+    .vertical-button {
+      top: auto; /* Reset top positioning */
+      bottom: 10px; /* Position it at the bottom */
+      
+      border-radius: 5px; /* Rounded button */
+      padding: 8px 12px;
+      writing-mode: horizontal-tb; /* Change text to horizontal */
+      transform: none; /* Reset transform */
+      font-size: 14px; /* Smaller font */
+    }
+
+    .vertical-button img {
+      width: 16px;
+      height: 16px;
+      margin-left: 5px;
+      margin-top: 0;
+    }
+  }
+
+
+
+  .video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Aspect ratio of 16:9 */
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* General Styles------------------------------------------- */
+.video-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.dropdown-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dropdown {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.search-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.search-btn:hover {
+  background-color: #45a049;
+}
+
+.video-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.video-player {
+  display: block;
+}
+
+/*--------------*/
+
+    </style>
+  <script id='pixel-script-poptin' src='https://cdn.popt.in/pixel.js?id=9764ddf54445b' async='true'></script>
+  </head>
+
+
+  <body>
+
+    <!-- Body Wrap - Start -->
+    <div class="page_wrapper">
+
+      <!-- Back To Top - Start -->
+      <div class="backtotop">
+        <a href="#" class="scroll">
+          <i class="far fa-arrow-up"></i>
+        </a>
+      </div>
+      <!-- Back To Top - End -->
+
+      <!-- Site Header - Start
+      ================================================== -->
+      <header class="site_header site_header_1">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col col-lg-3 col-5">
+              <div class="site_logo">
+                <a class="site_link" href="index.html">
+                  <img src="assets/images/logo/bm.png" alt="Collab - Online Learning Platform">
+                </a>
+              </div>
+            </div>
+            <div class="col col-lg-6 col-2">
+              <nav class="main_menu navbar navbar-expand-lg">
+                <div class="main_menu_inner collapse navbar-collapse justify-content-center" id="main_menu_dropdown">
+                  <ul class="main_menu_list unordered_list_center">
+
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="dropdown">
+                      <a class="nav-link" href="#" id="home_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
+                      <ul class="dropdown-menu" aria-labelledby="home_submenu">
+                        <li class="dropdown">
+                          <a class="nav-link" href="#" id="mentors_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Software Development
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="mentors_submenu">
+                            <li><a href="C.html">C, C++</a></li>
+                            <li><a href="Python.html">Python</a></li>
+                            <li><a href="Java.html">Java</a></li>
+                            <li><a href="Dotnet.html">.Net</a></li>
+                            <li><a href="Php.html">PHP</a></li>
+                            <li><a href="Golang.html">Go Lang</a></li>
+                          </ul>
+                          <li class="dropdown">
+                            <a class="nav-link" href="#" id="mentors_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Digital Marketing
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="mentors_submenu">
+                              <li><a href="Digital.html">Digital Marketing</a></li>
+                              <li><a href="Smm.html">Social Media Marketing</a></li>
+                              <li><a href="Seo.html">SEO</a></li>
+                              <li><a href="Meta.html">Meta Ads</a></li>
+                              <li><a href="Google.html">Google Ads</a></li>
+                              <li><a href="Ecommerce.html">E-Commerce Marketing</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                          <a class="nav-link" href="#" id="mentors_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Web Development
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="mentors_submenu">
+                            <li><a href="Web.html">Web Design</a></li>
+                            <li><a href="angular.html">Angular</a></li>
+                            <li><a href="react.html">React</a></li>
+                            <li><a href="node.html">Node Js</a></li>
+                            <li><a href="mean.html">MEAN</a></li>
+                            <li><a href="mern.html">MERN</a></li>
+                            <li><a href="fullstack.html">Full Stack </a></li>
+                            <li><a href="wordpress.html">Wordpress/ Drupal</a></li>
+                          </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a class="nav-link" href="#" id="mentors_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Database
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="mentors_submenu">
+                          <li><a href="dev.html">Oracle Dev</a></li>
+                          <li><a href="dba.html">Oracle DBA</a></li>
+                          <li><a href="mango.html">Mongo DB</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a class="nav-link" href="#" id="mentors_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Cloud Computing
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="mentors_submenu">
+                        <li><a href="aws.html">AWS</a></li>
+                        <li><a href="azure.html">MS Azure</a></li>
+                        <li><a href="cloud.html">Google Cloud</a></li>
+                        <li><a href="vmware.html">VMware</a></li>
+                        <li><a href="devops.html">Devops</a></li>
+                        <li><a href="adev.html">AWS Devops</a></li>
+                        <li><a href="azdev.html">Azure Devops</a></li>
+                      </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a class="nav-link" href="#" id="mentors_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Mobile Development
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="mentors_submenu">
+                      <li><a href="ios.html">IOS Development</a></li>
+                      <li><a href="android.html">Android Development</a></li>
+                      <li><a href="flutter.html">Flutter Development</a></li>
+                      <li><a href="rnd.html">React Native Development</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                  <a class="nav-link" href="#" id="mentors_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Linguistic
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="mentors_submenu">
+                    <li><a href="seng.html">Spoken English</a></li>
+                    <li><a href="aeng.html">Advanced English</a></li>
+                    <li><a href="french.html">Basic French</a></li>
+                    <li><a href="shindi.html">Spoken Hindi</a></li>
+                    <li><a href="ahindi.html">Academic Hindi</a></li>
+                    <li><a href="sarabic.html">Spoken Arabic </a></li>
+                    <li><a href="aarabic.html">Academic Arabic</a></li>
+                  </ul>
+              </li>
+              <li class="dropdown">
+                <a class="nav-link" href="#" id="mentors_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Design
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="mentors_submenu">
+                  <li><a href="uiux.html">UI/UX Design</a></li>
+                  <li><a href="graphic.html">Graphic Design</a></li>
+                  <li><a href="animation.html">Animation</a></li>
+                  <li><a href="video.html">Video Editing</a></li>
+                </ul>
+            </li>
+                   
+                      </ul>
+                    </li>
+                    
+                    <li><a class="nav-link" href="about.html">About </a></li>
+                 
+                    <li><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li><a class="nav-link" href="webinar.html">Webinar</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="col col-lg-3 col-5">
+              <ul class="header_btns_group unordered_list_end">
+                <li>
+                  <button class="mobile_menu_btn" type="button" data-bs-toggle="collapse" data-bs-target="#main_menu_dropdown" aria-controls="main_menu_dropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="far fa-bars"></i>
+                  </button>
+                </li>
+                <li>
+                
+                    <a href="https://wa.me/+919944940051" target="_blank" class="btn btn_dark">
+                    
+                    <span>
+                      <small>Enquire
+                      </small>
+                      <small>Enquire</small>
+                    </span>
+                  </a>
+                </li>
+               
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+<!---Iframe-->
+
+<main class="page_content">
+       
+
+
+     
+  <div class="video-section">
+    <div class="dropdown-container">
+      <select id="videoDropdown" class="dropdown">
+        <option value="none" selected>Select a Video</option>
+        <option value="Day 1">Day 1- Master the basics and boost your online presence </option>
+        <option value="video2">Day 2- Establish your presence in the digital world</option>
+        
+      </select>
+      <button id="searchButton" class="search-btn">Search</button>
+    </div>
+  
+    <div class="video-container">
+      <iframe id="videoPlayer" class="video-player" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  
+      
+      <!-- Site Footer - Start
+      ================================================== -->
+      <footer class="site_footer">
+        <div class="footer_widget_area">
+          <div class="container">
+            <div class="row">
+              <div class="col col-lg-3 col-md-6 col-sm-6">
+                <div class="footer_widget">
+                  <div class="site_logo">
+                    <a class="site_link" href="index.html">
+                      <img src="assets/images/logo/BM Logo Final-01.png" alt="Collab - Online Learning Platform">
+                    </a>
+                  </div>
+                  <p>
+                    BM Academy offers hands-on training in courses like Digital Marketing, Web Development, and Cloud Computing, designed to equip students with essential skills for today's industries. With expert guidance and career support, we help you unlock your potential and achieve professional growth.
+                  </p>
+                  <ul class="social_links unordered_list">
+                    <li>
+                      <a href="https://www.facebook.com/people/BM-Academy/61566753898165/"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/@bmacademypondy"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li>
+                      <a href="https://x.com/BMACADEMYPONDY"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://www.linkedin.com/company/bm-academypondy/about/?viewAsMember=true"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                    <li>
+                      <a href="https://wa.me/+919944940051" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </li>
+                  
+                  </ul>
+                </div>
+              </div>
+              <div class="col col-lg-6">
+                <div class="row">
+                  <div class="col col-md-4 col-sm-4">
+                    <div class="footer_widget">
+                      <h3 class="footer_widget_title">Links</h3>
+                      <ul class="page_list unordered_list_block">
+                        <li>
+                          <a href="about.html">
+                            <span class="item_icon"><i class="fas fa-caret-right"></i></span>
+                            <span class="item_text">About</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <span class="item_icon"><i class="fas fa-caret-right"></i></span>
+                            <span class="item_text">Courses</span>
+                          </a>
+                        </li>
+                       
+                      
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col col-md-4 col-sm-4">
+                    <div class="footer_widget">
+                      <h3 class="footer_widget_title">Class</h3>
+                      <ul class="page_list unordered_list_block">
+                        <li>
+                          <a href="node.html">
+                            <span class="item_icon"><i class="fas fa-caret-right"></i></span>
+                            <span class="item_text">Software</span><br>
+                            <span> &emsp; Development</span>
+                          </a>
+                        </li>
+                        
+                        <li>
+                          <a href="node.html">
+                            <span class="item_icon"><i class="fas fa-caret-right"></i></span>
+                            <span class="item_text">Web Development</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="ios.html">
+                            <span class="item_icon"><i class="fas fa-caret-right"></i></span>
+                            <span class="item_text">Mobile Development</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="mango.html">
+                            <span class="item_icon"><i class="fas fa-caret-right"></i></span>
+                            <span class="item_text">Database </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="aws.html">
+                            <span class="item_icon"><i class="fas fa-caret-right"></i></span>
+                            <span class="item_text">Cloud computing </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="aeng.html">
+                            <span class="item_icon"><i class="fas fa-caret-right"></i></span>
+                            <span class="item_text">Linguistic</span>
+                          </a>
+                        </li>
+                        
+                        <li>
+                          <a href="uiux.html">
+                            <span class="item_icon"><i class="fas fa-caret-right"></i></span>
+                            <span class="item_text">Design </span>
+                          </a>
+                        </li><li>
+                          <a href="Digital.html">
+                            <span class="item_icon"><i class="fas fa-caret-right"></i></span>
+                            <span class="item_text">Digital Marketing</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+              <div class="col col-lg-3 col-md-6 col-sm-6">
+                <div class="footer_widget">
+                  <h3 class="footer_widget_title">Location</h3>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3903.195314421989!2d79.8331345732519!3d11.960975188269185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1729172877099!5m2!1sen!2sin" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><br>
+        <div class="copyright_widget">
+
+       
+          <div class="container">
+            <p class="copyright_text text-center mb-0">
+            <a href="index.html">
+              Copy right
+            </a> © <b></b>2024 BM Techx. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+      <!-- Site Footer - End
+      ================================================== -->
+
+    </div>
+    <!-- Body Wrap - End -->
+
+    <!-- Framework - Jquery Include -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-dropdown-ml-hack.js"></script>
+
+    <!-- animation - jquery include -->
+    <script src="assets/js/cursor.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/tilt.min.js"></script>
+    <script src="assets/js/parallax.min.js"></script>
+    <script src="assets/js/parallax-scroll.js"></script>
+
+    <!-- Carousel - Jquery Include -->
+    <script src="assets/js/slick.min.js"></script>
+
+    <!-- Video & Image Popup - Jquery Include -->
+    <script src="assets/js/magnific-popup.min.js"></script>
+
+    <!-- Counter Up - Jquery Include -->
+    <script src="assets/js/waypoint.js"></script>
+    <script src="assets/js/counterup.min.js"></script>
+
+    <!-- Countdown Timer - jquery include -->
+    <script src="assets/js/countdown.js"></script>
+
+    <!-- Vanilla Calendar - Jquery Include -->
+    <script src="assets/js/vanilla-calendar.min.js"></script>
+
+    <!-- Custom - Jquery Include -->
+    <script src="assets/js/main.js"></script>
+    <script>
+document.getElementById('searchButton').addEventListener('click', function() {
+  const videoDropdown = document.getElementById('videoDropdown');
+  const selectedVideo = videoDropdown.value;
+  const videoPlayer = document.getElementById('videoPlayer');
+
+  let videoURL = '';
+
+  // Define the video URLs for each option
+  if (selectedVideo === 'Day 1') {
+    videoURL = 'https://www.youtube-nocookie.com/embed/ZWdVJwufdVk?si=5fa9VfMtir8blii3';
+  } else if (selectedVideo === 'video2') {
+    videoURL = 'https://www.youtube-nocookie.com/embed/wJ8rKeJ0bwk?si=FntlE7fy9E8tw1VV';
+  } else if (selectedVideo === 'video3') {
+    videoURL = 'https://www.youtube.com/embed/VIDEO_ID_3';
+  } else {
+    videoURL = '';
+  }
+
+  if (videoURL) {
+    videoPlayer.src = videoURL;  // Set the video URL in the iframe
+  } else {
+    alert('Please select a valid video');
+  }
+});
+
+    </script>
+    
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-102MXGE3GQ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-102MXGE3GQ');
+</script>
+
+  </body>
+</html>
